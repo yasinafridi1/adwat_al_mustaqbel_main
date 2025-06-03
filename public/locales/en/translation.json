@@ -1,15 +1,13 @@
 {
-    "nav": {
-        "home": "Home",
-        "services": "Services",
-        "about": "About Us",
-        "faqs": "FAQs",
-        "contact": "Contact Us"
-    },
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "faq": "FAQs",
+    "contact": "Contact Us",
     "connect": "Connect with us",
     "call": "Call us anytime",
+    "service_header": "Our Services",
     "service_description": "We provide maintenance, repair, and installation services for all brands",
-    "our_services": "Our Services",
     "services_cards": {
         "0": {
             "title": "Deep Cleaning",
@@ -52,8 +50,8 @@
             "description": "Eliminating pests to keep your home safe and hygienic"
         }
     },
-    "why_adwat": "Why Adwat?",
-    "adwat_description": "At Adwat, we offer high-quality services with precision and care. From AC installation to appliance repair, we focus on getting the job done right the first time. We value reliability, professionalism, and customer satisfaction. Your comfort is our mission — and excellence is our standard. We believe in long-term solutions, not quick fixes. With a team of trained experts and a customer-focused mindset, we ensure every job meets the highest quality standards.",
+    "whyus_header": "Why Adwat?",
+    "whyus_description": "At Adwat, we offer high-quality services with precision and care. From AC installation to appliance repair, we focus on getting the job done right the first time. We value reliability, professionalism, and customer satisfaction. Your comfort is our mission — and excellence is our standard. We believe in long-term solutions, not quick fixes. With a team of trained experts and a customer-focused mindset, we ensure every job meets the highest quality standards.",
     "why_us_cards": {
         "0": {
             "title": "Expert Professionals",
@@ -80,6 +78,9 @@
             "description": "We have a long history of successful projects and satisfied clients, showcasing our reliability and expertise."
         }
     },
+    "about_header": "About Adwat",
+    "about_description": "At Adwat Al-Mustaqbel, we specialize in delivering reliable, efficient, and affordable solutions for all your air conditioning and home appliance needs. Whether it’s installation, maintenance, or repair, our skilled technicians are equipped with the latest tools and expertise to get the job done right the first time. We are committed to providing top-quality service that ensures comfort, safety, and satisfaction in every home we serve. With years of hands-on experience and a customer-first approach, we’ve built a reputation for excellence across the region. From minor fixes to major installations, we handle every task with professionalism and care. Trust Adwat Al-Mustaqbel to keep your appliances running smoothly and your home comfortable all year round.",
+    "testimonial_header": "What people say about us ?",
     "testimonials": {
         "0": {
             "name": "Ayesha Khan",
@@ -132,6 +133,7 @@
             "comment": "Great communication and smooth collaboration from start to finish."
         }
     },
+    "faq_header": "Frequently asked questions ?",
     "faqs": {
         "0": {
             "text": "What is Adwat?",
@@ -173,5 +175,12 @@
             "text": "How can I contact Adwat customer support?",
             "description": "You can reach us 24/7 via phone, email, or live chat on our website or mobile app."
         }
-    }
+    },
+    "location": "LOCATION",
+    "address_riyadh": "Riyadh, Hye As Salam",
+    "address_jeddah": "Jeddah, KSA",
+    "address_damam": "Dmammam",
+    "explore": "Explore",
+    "privacy": "Privacy Policies",
+    "terms": "Terms & Conditions"
 }

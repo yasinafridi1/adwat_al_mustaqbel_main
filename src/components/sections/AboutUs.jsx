@@ -2,8 +2,10 @@ import SectionHeader from "@Components/Typograpghy/SectionHeader";
 import React from "react";
 import aboutusImage from "@Images/about.jpg";
 import SectionWrapper from "@Components/Wrappers/SectionWrapper";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <SectionWrapper
       classes={
@@ -25,22 +27,11 @@ const AboutUs = () => {
       </div>
       <div data-aos="slide-left" className="w-full lg:w-[45%] text-light">
         <div>
-          <SectionHeader text={"About Adwat"} />
+          <SectionHeader itemKey={"about_header"} />
         </div>
         <div className="mt-6">
           <p className="text-xs sm:text-sm md:text-base 2xl:text-xl w-[90%]">
-            At Adwat Al-Mustaqbel, we specialize in delivering reliable,
-            efficient, and affordable solutions for all your air conditioning
-            and home appliance needs. Whether it’s installation, maintenance, or
-            repair, our skilled technicians are equipped with the latest tools
-            and expertise to get the job done right the first time. We are
-            committed to providing top-quality service that ensures comfort,
-            safety, and satisfaction in every home we serve. With years of
-            hands-on experience and a customer-first approach, we’ve built a
-            reputation for excellence across the region. From minor fixes to
-            major installations, we handle every task with professionalism and
-            care. Trust Adwat Al-Mustaqbel to keep your appliances running
-            smoothly and your home comfortable all year round.
+            {t("about_description")}
           </p>
         </div>
         <div className="w-full mt-5">

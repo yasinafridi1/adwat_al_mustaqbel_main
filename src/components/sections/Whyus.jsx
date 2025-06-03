@@ -4,8 +4,10 @@ import SectionWrapper from "@Components/Wrappers/SectionWrapper";
 import { whyUsData } from "@Data/cardsdata";
 import aboutusImage from "@Images/about.jpg";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Whyus = () => {
+  const { t } = useTranslation();
   return (
     <SectionWrapper
       classes={"bg-white rounded-[50px] px-6 sm:px-8 md:px-10 lg:px-12"}
@@ -13,18 +15,11 @@ const Whyus = () => {
       <div className="py-10  w-full  flex justify-center items-stretch flex-col lg:flex-row gap-8">
         <div data-aos="fade-right" className="w-full lg:w-[45%] text-boxdark2">
           <div>
-            <SectionHeader text={"Why Adwat ? "} />
+            <SectionHeader itemKey={"whyus_header"} text={"Why Adwat ? "} />
           </div>
           <div className="mt-6">
             <p className="text-xs sm:text-sm md:text-base 2xl:text-xl w-[90%]">
-              At Adwat, we deliver top-quality services with precision and care.
-              From AC installations to appliance repairs, our focus is on doing
-              it right the first time. We value reliability, professionalism,
-              and customer satisfaction. Your comfort is our mission — and
-              excellence is our standard. We believe in long-term solutions, not
-              quick fixes. With a team of trained experts and a customer-first
-              mindset, we ensure every job meets the highest standards of
-              quality.
+              {t("whyus_description")}
             </p>
           </div>
           <div className="w-full mt-5">

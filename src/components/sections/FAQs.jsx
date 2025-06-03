@@ -15,12 +15,12 @@ const FAQs = () => {
       id={"faqs"}
       classes={"pt-5 pb-14 px-6 sm:px-8 md:px-10 lg:px-12"}
     >
-      <SectionHeader text={"Frequently asked questions ?"} />
-      {faQuestions.slice(0, 4).map((element, index) => {
+      <SectionHeader itemKey={"faq_header"} />
+      {faQuestions.slice(0, 4).map((_, index) => {
         return (
           <div
-            data-aos="slide-up"
             key={index}
+            data-aos="fade-up"
             className={`${index > 0 ? "border-t border-gray-300 " : " mt-8"} `}
           >
             <div className="flex justify-between items-center gap-6 w-full py-8 px-2">

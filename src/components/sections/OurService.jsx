@@ -11,7 +11,7 @@ const OurService = () => {
     <SectionWrapper id="services" classes={"pt-14 pb-8"}>
       <section>
         <div className="w-full flex justify-center items-center">
-          <SectionHeader text="Our Services" />
+          <SectionHeader itemKey="service_header" />
         </div>
         <div className="w-full flex justify-center items-center mt-2">
           <p className="text-base md:text-lg 2xl:text-xl poppins-500 w-[95%]  sm:w-[75%] md:w-[60%] text-center ">

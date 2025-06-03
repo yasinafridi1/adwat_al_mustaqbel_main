@@ -14,7 +14,10 @@ const Testimonial = () => {
     <SectionWrapper classes={"pt-16 pb-8 px-6 sm:px-8 md:px-10 lg:px-12"}>
       {/* Header + Arrows */}
       <div className="w-full flex justify-between items-center flex-col lg:flex-row gap-4 ">
-        <SectionHeader text="What People say about us ?" />
+        <SectionHeader
+          itemKey={"testimonial_header"}
+          text="What People say about us ?"
+        />
         <div className="flex justify-end items-center  gap-4">
           <div className="custom-prev cursor-pointer p-3 rounded-full flex justify-center items-center border border-primary bg-primary text-light transition-all duration-500 hover:bg-white hover:text-primary">
             <FaArrowLeft className="text-2xl" />

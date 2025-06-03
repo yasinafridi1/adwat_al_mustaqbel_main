@@ -57,7 +57,7 @@ const GuestNavbar = () => {
           <div className="hidden ltr:border-r-2 py-1 border-gray-400 rtl:pl-5 pr-5 sm:flex justify-start items-center flex-col">
             <div className="mb-1">
               <p className="text-xs sm:text-sm 2xl:text-base poppins-500 text-gray-500">
-                Connect with us
+                {t("connect")}
               </p>
             </div>
             <div className="flex justify-start items-center gap-3">
@@ -70,7 +70,7 @@ const GuestNavbar = () => {
           <div className=" py-1 rtl:border-r-2 border-gray-400 rtl:pr-5 pl-5 flex justify-center items-start flex-col">
             <div className="mb-1">
               <p className="text-xs sm:text-sm 2xl:text-base poppins-500">
-                Call us anytime
+                {t("call")}
               </p>
             </div>
             <div className="flex justify-start items-center gap-3 ">

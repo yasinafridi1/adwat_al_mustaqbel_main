@@ -53,23 +53,23 @@ export const faQuestions = [
 
 export const explorePages = [
   {
-    text: "About Us",
+    text: "about",
     path: "about-us",
   },
   {
-    text: "Contact Us",
+    text: "contact",
     path: "contact-us",
   },
   {
-    text: "FAQs",
+    text: "faq",
     path: "faqs",
   },
   {
-    text: "Privacy Policies",
+    text: "privacy",
     path: "privacy-policies",
   },
   {
-    text: "Terms & Conditions",
+    text: "terms",
     path: "terms-and-conditions",
   },
 ];

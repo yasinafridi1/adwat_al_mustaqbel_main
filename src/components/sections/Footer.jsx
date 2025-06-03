@@ -8,38 +8,25 @@ import {
 } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-
-function returnPagesRows(text, path, index) {
-  return (
-    <Link
-      key={index}
-      to={path}
-      className="block text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500 hover:text-white"
-    >
-      {text}
-    </Link>
-  );
-}
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div id="contact" className="bg-primary text-light pt-8 w-full px-12">
       <div className="max-w-[2000px] mx-auto  gap-8 w-full px-3 flex justify-between items-stretch flex-wrap">
         <div className="flex-grow basis-[300px]">
           <h3 className="poppins-800 text-base sm:text-lg lg:text-xl 2xl:text-[23px] text-white border-b-light border-b-2  pb-1 mb-3">
-            LOCATION - KSA
+            {t("location")}
           </h3>
           <p className="text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500">
-            Riyadh, As Salam
+            {t("address_riyadh")}
           </p>
           <p className="text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500">
-            Jeddah, KSA
+            {t("address_jeddah")}
           </p>
           <p className="text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500">
-            Dammam
-          </p>
-          <p className="text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500">
-            Al Qaseem, KSA
+            {t("address_damam")}
           </p>
           <p className="text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500">
             Tel: +966545573208
@@ -47,15 +34,23 @@ const Footer = () => {
         </div>
         <div className="flex-grow basis-[300px]">
           <h3 className="poppins-800 text-base sm:text-lg lg:text-xl 2xl:text-[23px] text-white border-b-light border-b-2  pb-1 mb-3">
-            Explore
+            {t("explore")}
           </h3>
           {explorePages.map((item, index) => {
-            return returnPagesRows(item.text, item.path, index);
+            return (
+              <Link
+                key={index}
+                to={item.path}
+                className="block text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500 hover:text-white"
+              >
+                {t(item.text)}
+              </Link>
+            );
           })}
         </div>
         <div className="flex-grow basis-[300px]">
           <h3 className="uppercase poppins-800 text-base sm:text-lg lg:text-xl 2xl:text-[23px] text-white border-b-light border-b-2  pb-1 mb-3">
-            COnnect with us
+            {t("connect")}
           </h3>
           <div className="flex justify-start items-center flex-wrap gap-4">
             <a
@@ -104,7 +99,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center text-white mt-4 border-t ry py-3">
-        <p className="poppins-500">
+        <p dir="ltr" className="poppins-500">
           Copyright © 2024{" "}
           <span className="text-light poppins-700">Adwat </span> , All Rights
           Reserved.
