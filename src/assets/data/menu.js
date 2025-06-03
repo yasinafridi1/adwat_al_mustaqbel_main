@@ -1,22 +1,22 @@
 export const navbar = [
   {
-    label: "Home",
+    labelKey: "nav.home",
     path: "#home",
   },
   {
-    label: "Services",
+    labelKey: "nav.services",
     path: "#services",
   },
   {
-    label: "About",
+    labelKey: "nav.about",
     path: "#about",
   },
   {
-    label: "FAQs",
+    labelKey: "nav.faqs",
     path: "#faqs",
   },
   {
-    label: "Contact",
+    labelKey: "nav.contact",
     path: "#contact",
   },
 ];

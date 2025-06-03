@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-const WhyUsCard = ({ itemData, aos }) => {
+const WhyUsCard = ({ itemData, aos, itemIndex }) => {
+  const { t } = useTranslation();
   return (
     <div
       data-aos={aos}
@@ -11,10 +13,10 @@ const WhyUsCard = ({ itemData, aos }) => {
       </div>
       <div className="mt-1">
         <h3 className="text-sm sm:text-base md:text-xl 2xl:text-2xl poppins-600">
-          {itemData.title}
+          {t(`why_us_cards.${itemIndex}.title`)}
         </h3>
         <p className="mt-1 text-xs sm:text-sm xl:text-base 2xl:text-lg text-boxdark2">
-          {itemData.description}
+          {t(`why_us_cards.${itemIndex}.description`)}
         </p>
       </div>
     </div>

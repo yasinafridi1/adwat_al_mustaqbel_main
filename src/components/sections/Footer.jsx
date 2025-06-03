@@ -9,9 +9,10 @@ import {
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
-function returnPagesRows(text, path) {
+function returnPagesRows(text, path, index) {
   return (
     <Link
+      key={index}
       to={path}
       className="block text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500 hover:text-white"
     >
@@ -48,8 +49,8 @@ const Footer = () => {
           <h3 className="poppins-800 text-base sm:text-lg lg:text-xl 2xl:text-[23px] text-white border-b-light border-b-2  pb-1 mb-3">
             Explore
           </h3>
-          {explorePages.map((item) => {
-            return returnPagesRows(item.text, item.path);
+          {explorePages.map((item, index) => {
+            return returnPagesRows(item.text, item.path, index);
           })}
         </div>
         <div className="flex-grow basis-[300px]">
@@ -97,7 +98,7 @@ const Footer = () => {
               className="w-full h-[200px] rounded-md"
               allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

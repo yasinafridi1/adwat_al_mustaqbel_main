@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "@Images/logo.png";
 import {
   FaFacebookSquare,
@@ -8,13 +8,26 @@ import {
 } from "react-icons/fa";
 import { navbar } from "@Data/menu";
 import "./navbar.css";
+import { useTranslation } from "react-i18next";
 
 const iconClasses = "text-sm md:text-base xl:text-lg 2xl:text-xl text-gray-600";
 
 const GuestNavbar = () => {
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language || "en");
+
+  function handleLanguageChange(e) {
+    const { value } = e.target;
+    setLanguage(value);
+    i18n.changeLanguage(value);
+    document.documentElement.setAttribute(
+      "dir",
+      value === "ar" ? "rtl" : "ltr"
+    );
+  }
+
   useEffect(() => {
     const handleScroll = () => {
-      console.log("Window Scroll", window.scrollY); // ✅ should log on scroll
       const navbar = document.querySelector(".navbar");
       if (!navbar) return;
 
@@ -39,9 +52,9 @@ const GuestNavbar = () => {
         <div className="w-[80px] h-[40px] sm:w-[90px] sm:h-[45px] md:w-[100px] md:h-[50px] lg:w-[110px] lg:h-[50px] xl:w-[120px] xl:h-[60px]">
           <img src={logo} alt="logo" className="w-full h-full" />
         </div>
-
+        <div></div>
         <div className="flex text-gray-500">
-          <div className="hidden border-r-2 py-1 border-gray-400 pr-5 sm:flex justify-center items-start flex-col">
+          <div className="hidden ltr:border-r-2 py-1 border-gray-400 rtl:pl-5 pr-5 sm:flex justify-start items-center flex-col">
             <div className="mb-1">
               <p className="text-xs sm:text-sm 2xl:text-base poppins-500 text-gray-500">
                 Connect with us
@@ -54,7 +67,7 @@ const GuestNavbar = () => {
             </div>
           </div>
 
-          <div className=" py-1 border-gray-400 pl-5 flex justify-center items-start flex-col">
+          <div className=" py-1 rtl:border-r-2 border-gray-400 rtl:pr-5 pl-5 flex justify-center items-start flex-col">
             <div className="mb-1">
               <p className="text-xs sm:text-sm 2xl:text-base poppins-500">
                 Call us anytime
@@ -62,16 +75,29 @@ const GuestNavbar = () => {
             </div>
             <div className="flex justify-start items-center gap-3 ">
               <FaPhoneSquareAlt className={iconClasses} />
-              <p className="text-xs md:text-sm xl:text-base poppins-500">
+              <p
+                dir="ltr"
+                className="text-xs md:text-sm xl:text-base poppins-500"
+              >
                 +966545573208
               </p>
             </div>
           </div>
+          <select
+            value={language}
+            onChange={handleLanguageChange}
+            name="language"
+            id="language"
+            className="px-2 text-sm text-black  py-1 rounded-md ml-4 focus:outline-none"
+          >
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+          </select>
         </div>
       </div>
 
-      <nav className="py-2 w-full z-10 relative top-0 left-0 bg-primary px-2 sm:px-4 md:px-5 pr-1 sm:pr-5 md:pr-10 lg:pr-16 navbar">
-        <ul className="flex justify-end items-center gap-4 sm:gap-6 md:gap-8">
+      <nav className="py-2  w-full z-10 relative top-0 left-0 bg-primary px-2 sm:px-4 md:px-5 pr-3 sm:pr-5 md:pr-10 lg:pr-16 navbar">
+        <ul className="flex ltr:justify-end justify-start items-center gap-4 sm:gap-6 md:gap-8">
           {navbar.map((item, index) => {
             return (
               <li key={index} className="py-3">
@@ -79,7 +105,7 @@ const GuestNavbar = () => {
                   href={item.path}
                   className="poppins-500 text-light text-sm md:text-base xl:text-lg relative link"
                 >
-                  {item.label}
+                  {t(item.labelKey)}
                 </a>
               </li>
             );

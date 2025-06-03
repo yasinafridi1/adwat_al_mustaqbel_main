@@ -27,6 +27,7 @@ const Testimonial = () => {
 
       {/* Swiper */}
       <Swiper
+        dir="ltr"
         modules={[Navigation, Autoplay]}
         navigation={{
           nextEl: ".custom-next",
@@ -55,7 +56,7 @@ const Testimonial = () => {
       >
         {testimonialsData.map((item, index) => (
           <SwiperSlide key={index}>
-            <TestimonialCard dataItem={item} />
+            <TestimonialCard dataItem={item} itemIndex={index} />
           </SwiperSlide>
         ))}
       </Swiper>

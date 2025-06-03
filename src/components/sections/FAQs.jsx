@@ -2,11 +2,13 @@ import SectionHeader from "@Components/Typograpghy/SectionHeader";
 import SectionWrapper from "@Components/Wrappers/SectionWrapper";
 import { faQuestions } from "@Data/otherData";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { GrSubtractCircle } from "react-icons/gr";
 import { IoMdAddCircle } from "react-icons/io";
 
 const FAQs = () => {
   const [showIndex, setShowIndex] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <SectionWrapper
@@ -23,7 +25,7 @@ const FAQs = () => {
           >
             <div className="flex justify-between items-center gap-6 w-full py-8 px-2">
               <h4 className="poppins-500 text-[15px] sm:text-[17px] md:text-[19px] xl:text-[21px] 2xl:text-[23px]">
-                {element.text}
+                {t(`faqs.${index}.text`)}
               </h4>
               <div>
                 {showIndex === index ? (
@@ -46,7 +48,7 @@ const FAQs = () => {
             {showIndex === index ? (
               <div className="w-full px-2 pb-4">
                 <p className="text-[12px] sm:text-[14px] md:text-[18px] 2xl:text-xl">
-                  {element.description}
+                  {t(`faqs.${index}.description`)}
                 </p>
               </div>
             ) : (

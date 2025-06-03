@@ -53,6 +53,7 @@ const Whyus = () => {
               aos={index % 2 == 0 ? "fade-right" : "fade-left"}
               key={index}
               itemData={item}
+              itemIndex={index}
             />
           );
         })}

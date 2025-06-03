@@ -10,7 +10,7 @@ i18n
   .init({
     fallbackLng: "en",
     supportedLngs: ["en", "ar"],
-    debug: import.meta.env.DEV,
+    debug: false,
     interpolation: { escapeValue: false },
     detection: { order: ["localStorage", "htmlTag", "navigator"] },
   });
