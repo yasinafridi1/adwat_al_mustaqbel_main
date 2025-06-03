@@ -1,0 +1,64 @@
+import WhyUsCard from "@Components/Cards/WhyUsCard";
+import SectionHeader from "@Components/Typograpghy/SectionHeader";
+import SectionWrapper from "@Components/Wrappers/SectionWrapper";
+import { whyUsData } from "@Data/cardsdata";
+import aboutusImage from "@Images/about.jpg";
+import React from "react";
+
+const Whyus = () => {
+  return (
+    <SectionWrapper
+      classes={"bg-white rounded-[50px] px-6 sm:px-8 md:px-10 lg:px-12"}
+    >
+      <div className="py-10  w-full  flex justify-center items-stretch flex-col lg:flex-row gap-8">
+        <div data-aos="fade-right" className="w-full lg:w-[45%] text-boxdark2">
+          <div>
+            <SectionHeader text={"Why Adwat ? "} />
+          </div>
+          <div className="mt-6">
+            <p className="text-xs sm:text-sm md:text-base 2xl:text-xl w-[90%]">
+              At Adwat, we deliver top-quality services with precision and care.
+              From AC installations to appliance repairs, our focus is on doing
+              it right the first time. We value reliability, professionalism,
+              and customer satisfaction. Your comfort is our mission — and
+              excellence is our standard. We believe in long-term solutions, not
+              quick fixes. With a team of trained experts and a customer-first
+              mindset, we ensure every job meets the highest standards of
+              quality.
+            </p>
+          </div>
+          <div className="w-full mt-5">
+            <button className="w-full mt-3 py-3  poppins-600  text-light text-sm md:text-base 2xl:text-xl border border-light bg-primary rounded-xl transition-all ease-in-out duration-500  hover:text-primary hover:border-primary hover:bg-white">
+              Know Us Better
+            </button>
+          </div>
+        </div>
+        <div
+          data-aos="fade-left"
+          className="w-full md:w-[55%] relative hidden lg:block"
+        >
+          <div className="w-full h-full">
+            <img
+              src={aboutusImage}
+              alt="About us image"
+              className="w-full h-full rounded-3xl"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="w-full pt-4 pb-18 flex justify-center items-stretch gap-8  flex-wrap ">
+        {whyUsData.map((item, index) => {
+          return (
+            <WhyUsCard
+              aos={index % 2 == 0 ? "fade-right" : "fade-left"}
+              key={index}
+              itemData={item}
+            />
+          );
+        })}
+      </div>
+    </SectionWrapper>
+  );
+};
+
+export default Whyus;
