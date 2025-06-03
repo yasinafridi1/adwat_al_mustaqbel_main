@@ -20,9 +20,9 @@ const Home = () => {
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
         pagination={{ clickable: true }}
-        speed={3000}
+        speed={2000}
         className="w-screen h-[800px] bg-white"
         effect="fade"
       >
@@ -33,7 +33,7 @@ const Home = () => {
               style={{
                 backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.7),40%, rgba(255,255,255,0.2)), url(${banner.image})`,
                 backgroundRepeat: "no-repeat",
-                backgroundSize: "100%",
+                backgroundSize: "100% 100%",
               }}
             >
               <div className=" p-6 rounded-lg max-w-2xl">
