@@ -70,8 +70,8 @@ const GuestNavbar = () => {
         </div>
       </div>
 
-      <nav className="py-2 w-full z-10 relative top-0 left-0 bg-primary px-5 !pr-16 navbar">
-        <ul className="flex justify-end items-center gap-8">
+      <nav className="py-2 w-full z-10 relative top-0 left-0 bg-primary px-2 sm:px-4 md:px-5 pr-1 sm:pr-5 md:pr-10 lg:pr-16 navbar">
+        <ul className="flex justify-end items-center gap-4 sm:gap-6 md:gap-8">
           {navbar.map((item, index) => {
             return (
               <li key={index} className="py-3">
