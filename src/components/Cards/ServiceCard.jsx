@@ -22,7 +22,7 @@ const ServiceCard = ({ cardItem, itemIndex }) => {
         />
       </div>
 
-      <button className="transition-all ease-in-out duration-500 w-full mt-3 py-3 poppins-500 bg-primary text-light text-sm md:text-base border border-primary rounded-xl  group-hover:bg-gray-100 group-hover:text-primary hover:text-light hover:border-light hover:bg-primary">
+      <button className="transition-all ease-in-out duration-500 w-full mt-3 py-3 poppins-500  text-primary text-sm md:text-base border border-primary rounded-xl  group-hover:bg-gray-100 group-hover:text-primary hover:text-light hover:border-light hover:bg-primary">
         Request Service
       </button>
     </div>

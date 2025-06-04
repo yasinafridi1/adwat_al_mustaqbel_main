@@ -7,12 +7,13 @@
 }
 
 @theme {
-  --color-primary: #2116c4;
+  --color-primary: #5c46e0;
   --color-primary-light: #8baef8;
   --color-light: #dee4ee;
   --color-boxdark: #24303f;
   --color-boxdark2: #1a222c;
   --color-white: #fff;
+  --color-menu: rgba(0, 0, 0, 0.434);
 }
 
 body {
@@ -54,4 +55,20 @@ button {
 
 .text-color {
   color: #2116c4;
+}
+
+.wav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  transform: translate(-0%, -97%);
+}
+
+.wav1 {
+  z-index: 5;
+}
+
+.wav2 {
+  z-index: 6;
 }

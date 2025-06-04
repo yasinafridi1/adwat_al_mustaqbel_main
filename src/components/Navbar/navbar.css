@@ -35,3 +35,21 @@
     top: 0;
   }
 }
+
+.initial_nav {
+  position: fixed;
+  top: 40px;
+  left: 0;
+}
+
+.fixed_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-primary);
+}
+
+.initial_nav ul,
+.initial_nav .hamburger {
+  background-color: var(--color-menu);
+}

@@ -9,7 +9,7 @@ export default createBrowserRouter([
     element: <Guestlayouts />,
     children: [
       {
-        path: "",
+        path: "/",
         element: <Home />,
       },
       {

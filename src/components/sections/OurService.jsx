@@ -20,7 +20,7 @@ const OurService = () => {
         </div>
 
         <div className="w-full px-10 flex justify-center items-stretch flex-wrap gap-5 mt-10">
-          {serviceCardsData.map((item, index) => {
+          {serviceCardsData.slice(0, 6).map((item, index) => {
             return (
               <ServiceCard cardItem={item} key={index} itemIndex={index} />
             );

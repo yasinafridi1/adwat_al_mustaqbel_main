@@ -11,6 +11,9 @@ import AboutUs from "@Components/sections/AboutUs";
 import Footer from "@Components/sections/Footer";
 import Testimonial from "@Components/sections/Testimonial";
 import FAQs from "@Components/sections/FAQs";
+import banner from "@Images/banner.jpg";
+import waveTop from "@Images/waveherotop.svg";
+import waveBottom from "@Images/waveherobottom.svg";
 
 const Home = () => {
   return (
@@ -23,15 +26,15 @@ const Home = () => {
         autoplay={{ delay: 4000 }}
         pagination={{ clickable: true }}
         speed={2000}
-        className="w-screen h-[800px] bg-white"
+        className="w-screen min-h-[500px] h-screen bg-white"
         effect="fade"
       >
         {sliderData.map((banner, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-full h-full bg-cover bg-center flex items-center text-white text-center px-4"
+              className="w-screen h-screen  flex items-center text-white text-center px-4"
               style={{
-                backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.7),40%, rgba(255,255,255,0.2)), url(${banner.image})`,
+                backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.7),50%, rgba(255,255,255,0.2)), url(${banner.image})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "100% 100%",
               }}
@@ -41,6 +44,8 @@ const Home = () => {
                   {banner.title}
                 </h2>
                 <p className="text-md md:text-xl">{banner.subtitle}</p>
+                <img class="wav wav1" src={waveTop} />
+                <img class="wav wav2" src={waveBottom} />
               </div>
             </div>
           </SwiperSlide>
