@@ -28,9 +28,12 @@ const Footer = () => {
           <p className="text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500">
             {t("address_damam")}
           </p>
-          <p className="text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500">
-            Tel: +966545573208
-          </p>
+          <a
+            href="tel:+966508489160"
+            className="text-sm md:text-base xl:text-lg 2xl text-[20px] mb-1 poppins-500"
+          >
+            Tel: +966508489160
+          </a>
         </div>
         <div className="flex-grow basis-[300px]">
           <h3 className="poppins-800 text-base sm:text-lg lg:text-xl 2xl:text-[23px] text-white border-b-light border-b-2  pb-1 mb-3">
@@ -55,34 +58,35 @@ const Footer = () => {
           <div className="flex justify-start items-center flex-wrap gap-4">
             <a
               href="/"
-              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:text-primary-light"
+              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:scale-150"
             >
               <FaFacebookSquare className="text-lg sm:text-xl md:text-2xl lg:text-3xl" />
             </a>
 
             <a
               href="/"
-              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:text-primary-light"
+              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:scale-150"
             >
               <MdEmail className="text-xl sm:text-2xl md:text-3xl lg:text-4xl" />
             </a>
 
             <a
-              href="/"
-              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:text-primary-light"
+              href="https://wa.me/+966508489160"
+              target="_blank"
+              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:scale-150"
             >
               <FaSquareWhatsapp className="text-lg sm:text-xl md:text-2xl lg:text-3xl" />
             </a>
 
             <a
-              href="/"
-              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:text-primary-light"
+              href="tel:+966508489160"
+              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:scale-150"
             >
               <FaPhoneSquareAlt className="text-lg sm:text-xl md:text-2xl lg:text-3xl" />
             </a>
             <a
               href="/"
-              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:text-primary-light"
+              className="flex justify-start items-center gap-2 transition-all ease-in-out duration-500 hover:scale-150"
             >
               <FaInstagramSquare className="text-lg sm:text-xl md:text-2xl lg:text-3xl" />
             </a>
@@ -99,9 +103,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center text-white mt-4 border-t ry py-3">
-        <p dir="ltr" className="poppins-500">
+        <p dir="ltr" className="poppins-500 text-sm 2xl:text-lg">
           Copyright © 2024{" "}
-          <span className="text-light poppins-700">Adwat </span> , All Rights
+          <span className="text-white poppins-700">Adwat </span> , All Rights
           Reserved.
         </p>
       </div>

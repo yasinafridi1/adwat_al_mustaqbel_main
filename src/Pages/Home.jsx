@@ -23,16 +23,17 @@ const Home = () => {
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
-        speed={2000}
-        className="w-screen min-h-[500px] h-screen bg-white"
+        speed={1500}
+        className="w-screen min-h-[500px] h-[110vh] bg-white"
         effect="fade"
+        id="home"
       >
         {sliderData.map((banner, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-screen h-screen  flex items-center text-white text-center px-4"
+              className="w-screen h-full  flex items-center text-white text-center px-4"
               style={{
                 backgroundImage: `linear-gradient(90deg, rgba(0,0,0,0.7),50%, rgba(255,255,255,0.2)), url(${banner.image})`,
                 backgroundRepeat: "no-repeat",

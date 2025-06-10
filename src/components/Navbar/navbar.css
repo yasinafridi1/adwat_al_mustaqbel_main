@@ -53,3 +53,12 @@
 .initial_nav .hamburger {
   background-color: var(--color-menu);
 }
+
+.sidebar {
+  transform: translateX(110%);
+  transition: all 0.5s ease-in-out;
+}
+
+.active {
+  transform: translateX(0%);
+}
