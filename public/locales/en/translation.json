@@ -9,45 +9,53 @@
     "service_header": "Our Services",
     "service_description": "We provide maintenance, repair, and installation services for all brands",
     "services_cards": {
-        "0": {
-            "title": "Deep Cleaning",
-            "description": "Conducting all cleaning tasks with professionalism, including arriving on time"
+        "ac": {
+            "0": {
+                "title": "Cassette AC",
+                "description": "Providing expert installation, cleaning, and repair services for Cassette AC units used in wide or commercial spaces."
+            },
+            "1": {
+                "title": "Central AC",
+                "description": "We offer professional installation, maintenance, and repair services for Central AC systems, ensuring consistent cooling throughout your entire space with maximum efficiency."
+            },
+            "2": {
+                "title": "Concealed AC",
+                "description": "Specialized in installing, servicing, and repairing Concealed AC systems with care for aesthetics and efficient airflow."
+            },
+            "3": {
+                "title": "Package AC",
+                "description": "Professional services for installing, maintaining, and repairing Package AC systems ideal for large spaces like halls and offices."
+            },
+            "4": {
+                "title": "Split AC",
+                "description": "We provide expert installation, maintenance, and repair services for Split AC units to ensure optimal performance and energy efficiency."
+            },
+            "5": {
+                "title": "Stand Alone AC (Portable AC)",
+                "description": "We handle setup, maintenance, and troubleshooting for Stand Alone AC units to keep them effective and mobile-ready."
+            },
+            "6": {
+                "title": "Window AC",
+                "description": "Offering reliable installation, cleaning, and repair services for Window AC units to keep them running smoothly in any environment."
+            }
         },
-        "1": {
-            "title": "AC Installation",
-            "description": "Expert installation of air conditioners with quality assurance"
-        },
-        "2": {
-            "title": "AC Maintenance",
-            "description": "Regular check-ups to keep your air conditioning running smoothly"
-        },
-        "3": {
-            "title": "AC Repair",
-            "description": "Quick and reliable repair services for malfunctioning AC units"
-        },
-        "4": {
-            "title": "Home Appliances Repair",
-            "description": "Fixing refrigerators, washing machines, and other home appliances"
-        },
-        "5": {
-            "title": "Electrical Services",
-            "description": "Safe and professional electrical maintenance and installations"
-        },
-        "6": {
-            "title": "Plumbing Services",
-            "description": "Resolving leaks, clogs, and other plumbing issues efficiently"
-        },
-        "7": {
-            "title": "Furniture Assembly",
-            "description": "Fast and accurate assembly of home or office furniture"
-        },
-        "8": {
-            "title": "Painting Services",
-            "description": "Interior and exterior painting for homes and commercial spaces"
-        },
-        "9": {
-            "title": "Pest Control",
-            "description": "Eliminating pests to keep your home safe and hygienic"
+        "ha": {
+            "0": {
+                "title": "Electric Oven",
+                "description": "Expert maintenance for electric ovens. We fix heating elements, control panels, and wiring problems efficiently."
+            },
+            "1": {
+                "title": "Gas Oven",
+                "description": "We provide safe and professional gas oven repairs including ignition, burner, and gas leakage issues."
+            },
+            "2": {
+                "title": "Refrigerator",
+                "description": "Complete refrigerator maintenance—from cooling problems to compressor and gas refill. We service single-door, double-door, and side-by-side models."
+            },
+            "3": {
+                "title": "Washing Machine",
+                "description": "We service all types of washing machines—front load, top load, and semi-automatic. From drum issues to drainage problems, we’ve got you covered."
+            }
         }
     },
     "whyus_header": "Why Adwat?",

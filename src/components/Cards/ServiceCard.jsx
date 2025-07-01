@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const ServiceCard = ({ cardItem, itemIndex }) => {
+const ServiceCard = ({ cardItem, itemIndex, type }) => {
   const { t } = useTranslation();
   return (
     <div
@@ -9,10 +9,10 @@ const ServiceCard = ({ cardItem, itemIndex }) => {
       className="group flex-grow basis-[350px] max-w-[550px] py-4 pt-6 cursor-pointer rounded-3xl px-5 bg-white hover:bg-primary  text-boxdark2 hover:text-light shadow_card"
     >
       <h5 className="poppins-600 text-[16px] sm:text-[18px] lg:text-[20px] 2xl:text-[24px]">
-        {t(`services_cards.${itemIndex}.title`)}
+        {t(`services_cards.${type}.${itemIndex}.title`)}
       </h5>
       <p className="line-clamp-3 text-[13px] md:text-[13px] xl:text-[14px] 2xl:text-[16px] mt-2">
-        {t(`services_cards.${itemIndex}.description`)}
+        {t(`services_cards.${type}.${itemIndex}.description`)}
       </p>
       <div className="w-full h-[300px] mt-3">
         <img

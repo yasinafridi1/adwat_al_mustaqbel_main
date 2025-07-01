@@ -1,11 +1,12 @@
 import ServiceCard from "@Components/Cards/ServiceCard";
 import SectionHeader from "@Components/Typograpghy/SectionHeader";
 import SectionWrapper from "@Components/Wrappers/SectionWrapper";
-import { serviceCardsData } from "@Data/cardsdata";
-import React from "react";
+import { hvacImage, homeAppliance } from "@Data/cardsdata";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const OurService = () => {
+  const [activeTab, setActiveTab] = useState("ac");
   const { t } = useTranslation();
   return (
     <SectionWrapper id="services" classes={"pt-14 pb-8"}>
@@ -18,14 +19,59 @@ const OurService = () => {
             {t("service_description")}
           </p>
         </div>
-
-        <div className="w-full px-10 flex justify-center items-stretch flex-wrap gap-5 mt-10">
-          {serviceCardsData.slice(0, 6).map((item, index) => {
-            return (
-              <ServiceCard cardItem={item} key={index} itemIndex={index} />
-            );
-          })}
+        <div className="mx-auto flex justify-center items-center mt-8 border-b border-primary max-w-max">
+          <button
+            onClick={() => {
+              setActiveTab("ac");
+            }}
+            className={`text-lg poppins-500 px-4 py-1 rounded-t-md transition-all ease-in-out duration-500 ${
+              activeTab === "ac"
+                ? "bg-primary text-light"
+                : "hover:bg-primary/80"
+            }`}
+          >
+            HVAC{" "}
+          </button>
+          <button
+            onClick={() => {
+              setActiveTab("ha");
+            }}
+            className={`text-lg poppins-500 px-4 py-1 rounded-t-md transition-all ease-in-out duration-500 ${
+              activeTab === "ha"
+                ? "bg-primary text-light"
+                : "hover:bg-primary/80"
+            }`}
+          >
+            Home Appliances
+          </button>
         </div>
+        {activeTab === "ac" ? (
+          <div className="w-full px-10 flex justify-center items-stretch flex-wrap gap-5 mt-10">
+            {hvacImage.map((item, index) => {
+              return (
+                <ServiceCard
+                  cardItem={item}
+                  key={index}
+                  type="ac"
+                  itemIndex={index}
+                />
+              );
+            })}
+          </div>
+        ) : (
+          <div className="w-full px-10 flex justify-center items-stretch flex-wrap gap-5 mt-10">
+            {homeAppliance.slice(0, 6).map((item, index) => {
+              return (
+                <ServiceCard
+                  cardItem={item}
+                  key={index}
+                  type="ha"
+                  itemIndex={index}
+                />
+              );
+            })}
+          </div>
+        )}
       </section>
     </SectionWrapper>
   );
