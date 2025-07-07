@@ -27,10 +27,10 @@ const OurService = () => {
             className={`text-lg poppins-500 px-4 py-1 rounded-t-md transition-all ease-in-out duration-500 ${
               activeTab === "ac"
                 ? "bg-primary text-light"
-                : "hover:bg-primary/80"
+                : "hover:bg-primary/20"
             }`}
           >
-            HVAC{" "}
+            {t("hvac")}
           </button>
           <button
             onClick={() => {
@@ -39,10 +39,10 @@ const OurService = () => {
             className={`text-lg poppins-500 px-4 py-1 rounded-t-md transition-all ease-in-out duration-500 ${
               activeTab === "ha"
                 ? "bg-primary text-light"
-                : "hover:bg-primary/80"
+                : "hover:bg-primary/20"
             }`}
           >
-            Home Appliances
+            {t("homeappliances")}
           </button>
         </div>
         {activeTab === "ac" ? (

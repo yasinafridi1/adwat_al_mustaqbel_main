@@ -13,11 +13,12 @@ import {
   FaHeadset,
   FaChartLine,
 } from "react-icons/fa";
-import testimonialImage from "@Images/testimonialImage.jpg";
 import electricOven from "@Images/home_apliance/electric_oven.jpg";
 import gasOven from "@Images/home_apliance/gas_oven.jpg";
 import refrigerator from "@Images/home_apliance/refregirator.jpg";
 import washingMachine from "@Images/home_apliance/washing_machien.jpg";
+import boyavatar from "@Images/boyavatar.png";
+import girlavatar from "@Images/girlavatar.png";
 
 // check rest data in translation.json file
 export const hvacImage = [
@@ -62,33 +63,15 @@ export const whyUsData = [
 // check rest data in translation.json file
 export const testimonialsData = [
   {
-    image: testimonialImage,
+    image: boyavatar,
   },
   {
-    image: testimonialImage,
+    image: girlavatar,
   },
   {
-    image: testimonialImage,
+    image: girlavatar,
   },
   {
-    image: testimonialImage,
-  },
-  {
-    image: testimonialImage,
-  },
-  {
-    image: testimonialImage,
-  },
-  {
-    image: testimonialImage,
-  },
-  {
-    image: testimonialImage,
-  },
-  {
-    image: testimonialImage,
-  },
-  {
-    image: testimonialImage,
+    image: boyavatar,
   },
 ];

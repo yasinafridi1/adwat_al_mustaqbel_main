@@ -7,6 +7,8 @@
     "connect": "Connect with us",
     "call": "Call us anytime",
     "service_header": "Our Services",
+    "hvac": "HVAC",
+    "homeappliances": "Home Appliances",
     "service_description": "We provide maintenance, repair, and installation services for all brands",
     "services_cards": {
         "ac": {
@@ -58,6 +60,7 @@
             }
         }
     },
+    "request_service": "Request Service",
     "whyus_header": "Why Adwat?",
     "whyus_description": "At Adwat, we offer high-quality services with precision and care. From AC installation to appliance repair, we focus on getting the job done right the first time. We value reliability, professionalism, and customer satisfaction. Your comfort is our mission — and excellence is our standard. We believe in long-term solutions, not quick fixes. With a team of trained experts and a customer-focused mindset, we ensure every job meets the highest quality standards.",
     "why_us_cards": {
@@ -91,54 +94,21 @@
     "testimonial_header": "What people say about us ?",
     "testimonials": {
         "0": {
-            "name": "Ayesha Khan",
-            "role": "Marketing Specialist",
-            "comment": "Working with this team was a seamless experience. Their attention to detail and prompt communication truly set them apart!"
+            "name": "Faisal Al-Harbi",
+            "comment": "I booked Adwat for AC cleaning, and the technician arrived on time, was respectful, and did a perfect job. Highly professional service!"
         },
         "1": {
-            "name": "Omar Farooq",
-            "role": "Software Engineer",
-            "comment": "Highly impressed with the quality of work and professionalism. They delivered everything before the deadline."
+            "name": "Noura Al-Qahtani",
+            "comment": "The Adwat team repaired my dishwasher within hours. Their response was fast, and the technician explained everything clearly. Very satisfied!"
         },
         "2": {
-            "name": "Fatima Zafar",
-            "role": "UI/UX Designer",
-            "comment": "Creative, responsive, and easy to work with. The designs exceeded our expectations!"
+            "name": "Reem Al-Suwailem",
+            "role": "Product Manager",
+            "comment": "As a busy mom, I appreciate how easy it is to schedule and get things done with Adwat. They fixed our washing machine in no time!"
         },
         "3": {
-            "name": "Ali Raza",
-            "role": "Product Manager",
-            "comment": "An outstanding team that truly understands product vision and user needs."
-        },
-        "4": {
-            "name": "Sara Malik",
-            "role": "Business Analyst",
-            "comment": "The insights and reporting tools they built helped us scale operations efficiently."
-        },
-        "5": {
-            "name": "Hassan Javed",
-            "role": "CTO",
-            "comment": "They implemented robust backend services and scalable architecture. Highly recommended for technical projects."
-        },
-        "6": {
-            "name": "Nida Ahmed",
-            "role": "HR Manager",
-            "comment": "The onboarding system they created simplified our HR workflows significantly."
-        },
-        "7": {
-            "name": "Usman Tariq",
-            "role": "Finance Lead",
-            "comment": "Extremely satisfied with their performance and professionalism throughout the engagement."
-        },
-        "8": {
-            "name": "Zainab Ali",
-            "role": "Social Media Strategist",
-            "comment": "They delivered engaging and on-brand digital content for our campaigns."
-        },
-        "9": {
-            "name": "Bilal Asif",
-            "role": "Operations Manager",
-            "comment": "Great communication and smooth collaboration from start to finish."
+            "name": "Abdullah Al-Mutairi",
+            "comment": "We use Adwat for all our rental properties. Their AC and maintenance services are reliable and always delivered on time."
         }
     },
     "faq_header": "Frequently asked questions ?",
@@ -185,7 +155,7 @@
         }
     },
     "location": "LOCATION",
-    "address_riyadh": "Riyadh, Hye As Salam",
+    "address_riyadh": "As Salam, Riyadh",
     "address_jeddah": "Jeddah, KSA",
     "address_damam": "Dmammam",
     "explore": "Explore",
