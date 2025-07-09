@@ -33,7 +33,7 @@ const ServiceCard = ({ cardItem, itemIndex, type }) => {
     if (type === "ac") {
       openModal();
     } else {
-      const whatsappNumber = "+923119921467";
+      const whatsappNumber = "+966508489160";
       const message =
         currentLang === "ar"
           ? `مرحبًا، أنا مهتم بطلب خدمة: ${title}. هل يمكنكم تزويدي بمزيد من التفاصيل عنها؟`
