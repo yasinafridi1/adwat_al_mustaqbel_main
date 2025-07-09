@@ -6,7 +6,7 @@ const RequestService = ({ onClose, title, itemKey }) => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const items = t(`priceList.${itemKey}`, { returnObjects: true });
-  const whatsappNumber = "+923119921467";
+  const whatsappNumber = "+966508489160";
 
   function sendMessage(data) {
     const { label, price } = data;
