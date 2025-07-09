@@ -14,53 +14,64 @@
         "ac": {
             "0": {
                 "title": "Cassette AC",
-                "description": "Providing expert installation, cleaning, and repair services for Cassette AC units used in wide or commercial spaces."
+                "description": "Providing expert installation, cleaning, and repair services for Cassette AC units used in wide or commercial spaces.",
+                "itemKey": "cassette"
             },
             "1": {
                 "title": "Central AC",
-                "description": "We offer professional installation, maintenance, and repair services for Central AC systems, ensuring consistent cooling throughout your entire space with maximum efficiency."
+                "description": "We offer professional installation, maintenance, and repair services for Central AC systems, ensuring consistent cooling throughout your entire space with maximum efficiency.",
+                "itemKey": "central"
             },
             "2": {
                 "title": "Concealed AC",
-                "description": "Specialized in installing, servicing, and repairing Concealed AC systems with care for aesthetics and efficient airflow."
+                "description": "Specialized in installing, servicing, and repairing Concealed AC systems with care for aesthetics and efficient airflow.",
+                "itemKey": "concealed"
             },
             "3": {
                 "title": "Package AC",
-                "description": "Professional services for installing, maintaining, and repairing Package AC systems ideal for large spaces like halls and offices."
+                "description": "Professional services for installing, maintaining, and repairing Package AC systems ideal for large spaces like halls and offices.",
+                "itemKey": "package"
             },
             "4": {
                 "title": "Split AC",
-                "description": "We provide expert installation, maintenance, and repair services for Split AC units to ensure optimal performance and energy efficiency."
+                "description": "We provide expert installation, maintenance, and repair services for Split AC units to ensure optimal performance and energy efficiency.",
+                "itemKey": "split"
             },
             "5": {
                 "title": "Stand Alone AC (Portable AC)",
-                "description": "We handle setup, maintenance, and troubleshooting for Stand Alone AC units to keep them effective and mobile-ready."
+                "description": "We handle setup, maintenance, and troubleshooting for Stand Alone AC units to keep them effective and mobile-ready.",
+                "itemKey": "standalone"
             },
             "6": {
                 "title": "Window AC",
-                "description": "Offering reliable installation, cleaning, and repair services for Window AC units to keep them running smoothly in any environment."
+                "description": "Offering reliable installation, cleaning, and repair services for Window AC units to keep them running smoothly in any environment.",
+                "itemKey": "window"
             }
         },
         "ha": {
             "0": {
                 "title": "Electric Oven",
-                "description": "Expert maintenance for electric ovens. We fix heating elements, control panels, and wiring problems efficiently."
+                "description": "Expert maintenance for electric ovens. We fix heating elements, control panels, and wiring problems efficiently.",
+                "itemKey": "electric_oven"
             },
             "1": {
                 "title": "Gas Oven",
-                "description": "We provide safe and professional gas oven repairs including ignition, burner, and gas leakage issues."
+                "description": "We provide safe and professional gas oven repairs including ignition, burner, and gas leakage issues.",
+                "itemKey": "gas_oven"
             },
             "2": {
                 "title": "Refrigerator",
-                "description": "Complete refrigerator maintenance—from cooling problems to compressor and gas refill. We service single-door, double-door, and side-by-side models."
+                "description": "Complete refrigerator maintenance—from cooling problems to compressor and gas refill. We service single-door, double-door, and side-by-side models.",
+                "itemKey": "refrigerator"
             },
             "3": {
                 "title": "Washing Machine",
-                "description": "We service all types of washing machines—front load, top load, and semi-automatic. From drum issues to drainage problems, we’ve got you covered."
+                "description": "We service all types of washing machines—front load, top load, and semi-automatic. From drum issues to drainage problems, we’ve got you covered.",
+                "itemKey": "washing_machine"
             }
         }
     },
-    "request_service": "Request Service",
+    "request_service": "Book Now",
     "whyus_header": "Why Adwat?",
     "whyus_description": "At Adwat, we offer high-quality services with precision and care. From AC installation to appliance repair, we focus on getting the job done right the first time. We value reliability, professionalism, and customer satisfaction. Your comfort is our mission — and excellence is our standard. We believe in long-term solutions, not quick fixes. With a team of trained experts and a customer-focused mindset, we ensure every job meets the highest quality standards.",
     "why_us_cards": {
@@ -154,11 +165,448 @@
             "description": "You can reach us 24/7 via phone, email, or live chat on our website or mobile app."
         }
     },
+    "priceList": {
+        "split": [
+            {
+                "label": "Water Leak",
+                "price": "SAR 100"
+            },
+            {
+                "label": "Issue with cooling",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Makes a sound",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change the compressor",
+                "price": "SAR 350"
+            },
+            {
+                "label": "Freon Filling",
+                "price": "SAR 160"
+            },
+            {
+                "label": "Other maintenance services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Soft Clean",
+                "price": "SAR 70"
+            },
+            {
+                "label": "Deep Clean",
+                "price": "SAR 200"
+            },
+            {
+                "label": "Installation",
+                "price": "SAR 200"
+            },
+            {
+                "label": "Dismantle",
+                "price": "SAR 120"
+            },
+            {
+                "label": "Reinstallation",
+                "price": "SAR 300"
+            },
+            {
+                "label": "Copper extension",
+                "price": "SAR 70"
+            },
+            {
+                "label": "Other installation services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change capacitor",
+                "price": "SAR 100"
+            },
+            {
+                "label": "Inspection visit",
+                "price": "SAR 70"
+            }
+        ],
+        "central": [
+            {
+                "label": "Issues with cooling",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Makes a sound",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change the compressor",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Fan change",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Indian Freon Filling",
+                "price": "SAR 300"
+            },
+            {
+                "label": "American Freon Filling",
+                "price": "SAR 450"
+            },
+            {
+                "label": "Interior control unit repair",
+                "price": "SAR 215"
+            },
+            {
+                "label": "Other maintenance services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Soft Clean",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Deep Clean",
+                "price": "SAR 200"
+            },
+            {
+                "label": "Change capacitor",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Inspection visit",
+                "price": "SAR 70"
+            }
+        ],
+        "package": [
+            {
+                "label": "Issues with cooling",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Makes a sound",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change the compressor",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Fan change",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Indian Freon Filling",
+                "price": "SAR 300"
+            },
+            {
+                "label": "American Freon Filling",
+                "price": "SAR 450"
+            },
+            {
+                "label": "Interior control unit repair",
+                "price": "SAR 215"
+            },
+            {
+                "label": "Other maintenance services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Soft Clean",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Deep Clean",
+                "price": "SAR 200"
+            },
+            {
+                "label": "Change capacitor",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Inspection visit",
+                "price": "SAR 70"
+            }
+        ],
+        "concealed": [
+            {
+                "label": "Water leakage",
+                "price": "SAR 180"
+            },
+            {
+                "label": "Issues with cooling",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Makes a sound",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change the compressor",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Fan change",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Freon Filling R-22",
+                "price": "SAR 250"
+            },
+            {
+                "label": "Freon Filling R-410",
+                "price": "SAR 350"
+            },
+            {
+                "label": "Interior control unit repair",
+                "price": "SAR 180"
+            },
+            {
+                "label": "Other maintenance services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Soft Clean",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Deep Clean",
+                "price": "SAR 200"
+            },
+            {
+                "label": "Installation",
+                "price": "SAR 850"
+            },
+            {
+                "label": "Dismantle",
+                "price": "SAR 300"
+            },
+            {
+                "label": "Changing the location of indoor unit",
+                "price": "SAR 1100"
+            },
+            {
+                "label": "Copper extension",
+                "price": "SAR 100"
+            },
+            {
+                "label": "Other installation services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change capacitor",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Inspection visit",
+                "price": "SAR 70"
+            }
+        ],
+        "cassette": [
+            {
+                "label": "Leakage",
+                "price": "SAR 180"
+            },
+            {
+                "label": "Issues with cooling",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Makes a sound",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change the compressor",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Fan Change",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Freon Filling R-22",
+                "price": "SAR 250"
+            },
+            {
+                "label": "Freon Filling R-410",
+                "price": "SAR 350"
+            },
+            {
+                "label": "Other maintenance services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Soft Clean",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Deep Clean",
+                "price": "SAR 200"
+            },
+            {
+                "label": "Installation",
+                "price": "SAR 660"
+            },
+            {
+                "label": "Dismantle",
+                "price": "SAR 350"
+            },
+            {
+                "label": "Changing the location of indoor unit",
+                "price": "SAR 950"
+            },
+            {
+                "label": "Copper extension",
+                "price": "SAR 100"
+            },
+            {
+                "label": "Other installation services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change capacitor",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Inspection visit",
+                "price": "SAR 70"
+            }
+        ],
+        "standalone": [
+            {
+                "label": "Water leakage",
+                "price": "SAR 160"
+            },
+            {
+                "label": "Issues with cooling",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Makes a sound",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change the compressor",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Fan Change",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Freon Filling R-22",
+                "price": "SAR 250"
+            },
+            {
+                "label": "Freon Filling R-410",
+                "price": "SAR 350"
+            },
+            {
+                "label": "Other maintenance services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Soft Clean",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Deep Clean",
+                "price": "SAR 200"
+            },
+            {
+                "label": "Installation",
+                "price": "SAR 600"
+            },
+            {
+                "label": "Dismantle",
+                "price": "SAR 200"
+            },
+            {
+                "label": "Changing the location of indoor unit",
+                "price": "SAR 750"
+            },
+            {
+                "label": "Copper extension",
+                "price": "SAR 100"
+            },
+            {
+                "label": "Other installation services",
+                "price": "SAR 100"
+            },
+            {
+                "label": "Change capacitor",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Inspection visit",
+                "price": "SAR 70"
+            }
+        ],
+        "window": [
+            {
+                "label": "Water leakage",
+                "price": "SAR 70"
+            },
+            {
+                "label": "Issues with cooling",
+                "price": "SAR 80"
+            },
+            {
+                "label": "Makes a sound",
+                "price": "SAR 80"
+            },
+            {
+                "label": "Change the compressor",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Fan Change",
+                "price": "As per inspection"
+            },
+            {
+                "label": "Freon Filling",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Other maintenance services",
+                "price": "SAR 80"
+            },
+            {
+                "label": "Washing",
+                "price": "SAR 70"
+            },
+            {
+                "label": "Installation",
+                "price": "SAR 110"
+            },
+            {
+                "label": "Dismantle",
+                "price": "SAR 70"
+            },
+            {
+                "label": "Changing the location of indoor unit",
+                "price": "SAR 150"
+            },
+            {
+                "label": "Other installation services",
+                "price": "SAR 90"
+            },
+            {
+                "label": "Change capacitor",
+                "price": "SAR 100"
+            },
+            {
+                "label": "Inspection visit",
+                "price": "SAR 70"
+            }
+        ]
+    },
     "location": "LOCATION",
     "address_riyadh": "As Salam, Riyadh",
     "address_jeddah": "Jeddah, KSA",
     "address_damam": "Dmammam",
     "explore": "Explore",
     "privacy": "Privacy Policies",
-    "terms": "Terms & Conditions"
+    "terms": "Terms & Conditions",
+    "cancel": "Cancel"
 }

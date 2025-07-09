@@ -45,8 +45,8 @@ const Home = () => {
                   {banner.title}
                 </h2>
                 <p className="text-md md:text-xl">{banner.subtitle}</p>
-                <img class="wav wav1" src={waveTop} />
-                <img class="wav wav2" src={waveBottom} />
+                <img className="wav wav1" src={waveTop} />
+                <img className="wav wav2" src={waveBottom} />
               </div>
             </div>
           </SwiperSlide>
