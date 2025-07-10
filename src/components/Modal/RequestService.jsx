@@ -48,7 +48,7 @@ const RequestService = ({ onClose, title, itemKey }) => {
             ? items.map((item, index) => {
                 return (
                   <tr key={index} className="border-b border-gray-300">
-                    <td className="rtl:pr-3 ltr:pl-3  py-2 w-[60%]">
+                    <td className="rtl:pr-3 ltr:pl-3  py-2 w-[35%] sm:w-[50%] md:w-[60%]">
                       {item.label}
                     </td>
                     <td className="ltr:text-left rtl:text-right rtl:pl-3 rtl:pr-3   min-w-[90px] ">
