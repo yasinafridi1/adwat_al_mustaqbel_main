@@ -31,45 +31,47 @@ const RequestService = ({ onClose, title, itemKey }) => {
       onClose={onClose}
       open={true}
     >
-      <table className="w-full min-w-[300px] border-collapse !overflow-x-auto ">
-        <thead className="bg-primary-light text-gray-800">
-          <tr className="text-sm md:text-base">
-            <th className="py-3 ltr:rounded-tl-xl rtl:rounded-tr-xl ltr:text-left rtl:text-right rtl:pr-3 ltr:pl-3">
-              Name
-            </th>
-            <th className="ltr:text-left rtl:text-right rtl:pl-3 rtl:pr-3 ">
-              Price
-            </th>
-            <th className="py-3 ltr:rounded-tr-xl rtl:rounded-tl-xl ltr:text-left rtl:text-right rtl:pl-3 rtl:pr-3 "></th>
-          </tr>
-        </thead>
-        <tbody className="text-xs md:text-sm">
-          {items.length
-            ? items.map((item, index) => {
-                return (
-                  <tr key={index} className="border-b border-gray-300">
-                    <td className="rtl:pr-3 ltr:pl-3  py-2 w-[35%] sm:w-[50%] md:w-[60%]">
-                      {item.label}
-                    </td>
-                    <td className="ltr:text-left rtl:text-right rtl:pl-3 rtl:pr-3   min-w-[90px] ">
-                      {item.price}
-                    </td>
-                    <td className="ltr:text-right rtl:text-left !text-xs poppins-600 xl:text-sm rtl:pl-3 ltr:pr-3  py-2">
-                      <button
-                        onClick={() => {
-                          sendMessage(item);
-                        }}
-                        className="text-nowrap border border-primary text-primary transition-all ease-in-out duration-300 hover:bg-primary hover:text-white px-2 py-2 rounded-md"
-                      >
-                        {t("request_service")}
-                      </button>
-                    </td>
-                  </tr>
-                );
-              })
-            : null}
-        </tbody>
-      </table>
+      <div className="w-full overflow-x-auto">
+        <table className="w-full min-w-[200px] border-collapse">
+          <thead className="bg-primary-light text-gray-800">
+            <tr className="text-sm md:text-base">
+              <th className="py-3 ltr:rounded-tl-xl rtl:rounded-tr-xl ltr:text-left rtl:text-right rtl:pr-3 ltr:pl-3">
+                Name
+              </th>
+              <th className="ltr:text-left rtl:text-right rtl:pl-3 rtl:pr-3 ">
+                Price
+              </th>
+              <th className="py-3 ltr:rounded-tr-xl rtl:rounded-tl-xl ltr:text-left rtl:text-right rtl:pl-3 rtl:pr-3 "></th>
+            </tr>
+          </thead>
+          <tbody className="text-xs md:text-sm">
+            {items.length
+              ? items.map((item, index) => {
+                  return (
+                    <tr key={index} className="border-b border-gray-300">
+                      <td className="rtl:pr-3 ltr:pl-3  py-2 w-[35%] sm:w-[50%] md:w-[60%]">
+                        {item.label}
+                      </td>
+                      <td className="ltr:text-left rtl:text-right rtl:pl-3 rtl:pr-3   min-w-[90px] ">
+                        {item.price}
+                      </td>
+                      <td className="ltr:text-right rtl:text-left !text-xs poppins-600 xl:text-sm rtl:pl-3 ltr:pr-3  py-2">
+                        <button
+                          onClick={() => {
+                            sendMessage(item);
+                          }}
+                          className="text-nowrap border border-primary text-primary transition-all ease-in-out duration-300 hover:bg-primary hover:text-white px-2 py-2 rounded-md"
+                        >
+                          {t("request_service")}
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })
+              : null}
+          </tbody>
+        </table>
+      </div>
     </ServiceBaseModal>
   );
 };
