@@ -5,10 +5,10 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 i18n
   .use(HttpBackend) // load JSON files from /public/locales/{lng}/{ns}.json
-  .use(LanguageDetector) // looks at localStorage, navigator, html lang…
+  //.use(LanguageDetector)  looks at localStorage, navigator, html lang…
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
+    fallbackLng: "ar",
     supportedLngs: ["en", "ar"],
     debug: false,
     interpolation: { escapeValue: false },

@@ -10,6 +10,24 @@
     "hvac": "HVAC",
     "homeappliances": "Home Appliances",
     "service_description": "We provide maintenance, repair, and installation services for all brands",
+    "slider": [
+    {
+      "title": "Welcome to Our Site",
+      "subtitle": "Providing the best service in the region with a team of dedicated professionals who are always ready to help. Your satisfaction is our mission."
+    },
+    {
+      "title": "Experience Quality",
+      "subtitle": "Your satisfaction is our priority. We aim to deliver excellence through our services, ensuring each experience exceeds your expectations."
+    },
+    {
+      "title": "Trusted by Thousands",
+      "subtitle": "Join our happy community today and discover why thousands rely on us for top-notch solutions, timely support, and lasting relationships."
+    },
+    {
+      "title": "Welcome to Our Site",
+      "subtitle": "Providing the best service in the region through personalized solutions, quality work, and a commitment to continuous improvement."
+    }
+  ],
     "services_cards": {
         "ac": {
             "0": {

@@ -14,10 +14,14 @@ import FAQs from "@Components/sections/FAQs";
 import banner from "@Images/banner.jpg";
 import waveTop from "@Images/waveherotop.svg";
 import waveBottom from "@Images/waveherobottom.svg";
+import FloatingButtons from "@Components/Buttons/FloatingButtons";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const {t} = useTranslation()
   return (
     <>
+      <FloatingButtons />
       <Swiper
         modules={[Autoplay, EffectFade]}
         spaceBetween={0}
@@ -40,11 +44,13 @@ const Home = () => {
                 backgroundSize: "100% 100%",
               }}
             >
-              <div className=" p-6 rounded-lg max-w-2xl">
-                <h2 className="text-3xl md:text-5xl font-bold mb-2">
-                  {banner.title}
+              <div className="p-6 rounded-lg max-w-2xl">
+                <h2 className="text-3xl md:text-5xl font-bold mb-2 text-start">
+                  {t(`slider.${index}.title`)}
                 </h2>
-                <p className="text-md md:text-xl">{banner.subtitle}</p>
+                <p className="text-md md:text-xl text-start">
+                  {t(`slider.${index}.subtitle`)}
+                </p>
                 <img className="wav wav1" src={waveTop} />
                 <img className="wav wav2" src={waveBottom} />
               </div>
