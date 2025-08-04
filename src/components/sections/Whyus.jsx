@@ -34,6 +34,7 @@ const Whyus = () => {
         >
           <div className="w-full h-full">
             <img
+              loading="lazy"
               src={aboutusImage}
               alt="About us image"
               className="w-full h-full rounded-3xl"

@@ -67,6 +67,7 @@ const ServiceCard = ({ cardItem, itemIndex, type }) => {
         </p>
         <div className="w-full h-[300px] mt-3" onClick={handleCardClick}>
           <img
+            loading="lazy"
             src={cardItem.img}
             alt={title}
             className="w-full h-full rounded-2xl"

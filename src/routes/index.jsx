@@ -1,7 +1,8 @@
 import Guestlayouts from "@Layouts/Guestlayouts";
-import Home from "@Pages/Home";
-import React from "react";
+
+import React, { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
+const Home = lazy(() => import("@Pages/Home"));
 
 export default createBrowserRouter([
   {

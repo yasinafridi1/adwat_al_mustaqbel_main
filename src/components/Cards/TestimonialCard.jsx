@@ -15,6 +15,7 @@ const TestimonialCard = ({ dataItem, itemIndex }) => {
         className="flex justify-start items-center w-full gap-4 "
       >
         <img
+          loading="lazy"
           src={dataItem.image}
           className=" w-[50px] h-[50px] rounded-full "
           alt="User Avatar"

@@ -1,24 +1,24 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { sliderData } from "@Data/sliderdata";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css/effect-fade";
-import OurService from "@Components/sections/OurService";
-import Whyus from "@Components/sections/Whyus";
-import AboutUs from "@Components/sections/AboutUs";
-import Footer from "@Components/sections/Footer";
-import Testimonial from "@Components/sections/Testimonial";
-import FAQs from "@Components/sections/FAQs";
-import banner from "@Images/banner.jpg";
 import waveTop from "@Images/waveherotop.svg";
 import waveBottom from "@Images/waveherobottom.svg";
 import FloatingButtons from "@Components/Buttons/FloatingButtons";
 import { useTranslation } from "react-i18next";
+import SectionLoader from "@Components/Loader/SectionLoader";
+const OurService = lazy(() => import("@Components/sections/OurService"));
+const Whyus = lazy(() => import("@Components/sections/Whyus"));
+const AboutUs = lazy(() => import("@Components/sections/AboutUs"));
+const Testimonial = lazy(() => import("@Components/sections/Testimonial"));
+const FAQs = lazy(() => import("@Components/sections/FAQs"));
+const Footer = lazy(() => import("@Components/sections/Footer"));
 
 const Home = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <>
       <FloatingButtons />
@@ -51,19 +51,21 @@ const Home = () => {
                 <p className="text-md md:text-xl text-start">
                   {t(`slider.${index}.subtitle`)}
                 </p>
-                <img className="wav wav1" src={waveTop} />
-                <img className="wav wav2" src={waveBottom} />
+                <img loading="lazy" className="wav wav1" src={waveTop} />
+                <img loading="lazy" className="wav wav2" src={waveBottom} />
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <OurService />
-      <Whyus />
-      <AboutUs />
-      <Testimonial />
-      <FAQs />
-      <Footer />
+      <Suspense fallback={<SectionLoader />}>
+        <OurService />
+        <Whyus />
+        <AboutUs />
+        <Testimonial />
+        <FAQs />
+        <Footer />
+      </Suspense>
     </>
   );
 };
